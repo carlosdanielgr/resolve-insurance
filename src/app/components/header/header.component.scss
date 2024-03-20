@@ -1,0 +1,72 @@
+@use "../../../styles/mixins" as *;
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  max-width: 1272px;
+  margin: 3rem auto 0;
+  background-color: var(--primary);
+
+  &__logo {
+    max-width: 195px;
+  }
+
+  &__navbar {
+    flex: 1 1 auto;
+
+    @include screen(custom, max, 768) {
+      display: none;
+    }
+
+    .navbar-nav {
+      flex: 1 1 auto;
+      flex-direction: row;
+      justify-content: space-evenly;
+
+      @include screen(custom, min, 1200) {
+        padding: 0 10rem;
+      }
+    }
+
+    .nav-item {
+      a {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  &__dripdown {
+    > a {
+      font-size: 1.5rem;
+      padding: 1rem;
+    }
+  }
+
+  &__btnget {
+    border-radius: 50px;
+    padding: 0.6rem 1rem;
+
+    &:hover {
+      background-color: transparent;
+      color: #fff;
+      box-shadow: 0 0 5px #fff;
+    }
+  }
+
+  &__menu {
+    padding: 0;
+    width: 33px;
+    border-style: none;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .dropdown {
+    @include screen(small) {
+      display: none;
+    }
+  }
+}
