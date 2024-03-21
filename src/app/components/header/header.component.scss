@@ -2,11 +2,12 @@
 
 .header {
   position: sticky;
-  top: 1rem;
+  top: 0;
   z-index: 1000;
   max-width: var(--mx-width);
   margin: 0 auto;
   padding: 1rem;
+  background-color: var(--white);
 
   &__logo {
     max-width: 184px;

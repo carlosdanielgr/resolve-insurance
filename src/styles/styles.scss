@@ -45,6 +45,12 @@ img {
   width: 100%;
 }
 
+article {
+  max-width: var(--mx-width);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
 // CLASS STANDARD
 
 .bg-gra-primary {
@@ -128,6 +134,33 @@ input.ng-touched.ng-invalid,
     border-color: transparent;
     color: var(--white);
     box-shadow: 0 0px 5px #0000009c;
+  }
+}
+
+.carousel-indicators {
+  gap: 1rem;
+  margin: 0;
+  @include specificity(2) {
+    > button {
+      position: relative;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #bcd8e9;
+    }
+    > button.active {
+      background-color: #2aa7ff;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: -5px;
+        left: -5px;
+        border-radius: 50%;
+        border: 1px solid #2aa7ff;
+      }
+    }
   }
 }
 

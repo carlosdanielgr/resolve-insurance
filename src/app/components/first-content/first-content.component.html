@@ -1,0 +1,21 @@
+<article class="first-content">
+  <ngb-carousel [showNavigationArrows]="false">
+    @for (item of data; track $index) {
+    <ng-template ngbSlide>
+      <section class="first-content__info">
+        <figure class="first-content__image">
+          <img [src]="item.image" alt="image" />
+        </figure>
+        <div class="first-content__text-info-content">
+          <span>{{ item.text }}</span>
+          <span class="first-content__text-info d-block">
+            {{ item.title.first }}
+            <span>{{ item.title.second }}</span>
+          </span>
+          <button type="button" class="btn btn-primary">Cotiza aquí</button>
+        </div>
+      </section>
+    </ng-template>
+    }
+  </ngb-carousel>
+</article>
