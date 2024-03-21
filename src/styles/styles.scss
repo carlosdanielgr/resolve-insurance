@@ -10,6 +10,7 @@
 
 :root {
   --primary: #2aa7ff;
+  --bg-primary: #f4f8ff;
   --white: #fff;
   --mx-width: 1170px;
 }
@@ -28,7 +29,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: var(--white);
+  background-color: var(--bg-primary);
   color: var(--primary);
 }
 
@@ -64,6 +65,10 @@ article {
 
 .txt-gra-primary {
   color: rgba(176, 30, 104, 1);
+}
+
+.txt-second {
+  color: #102851;
 }
 
 .sixth-content-carousel {
@@ -162,6 +167,11 @@ input.ng-touched.ng-invalid,
       }
     }
   }
+}
+
+.card {
+  border-radius: 15px;
+  box-shadow: 0 0 5px #00000052;
 }
 
 // .dropdown-menu {

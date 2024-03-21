@@ -1,0 +1,35 @@
+@use "./../../../styles/mixins" as *;
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.second-content {
+  margin: 0 1rem;
+  gap: 1rem;
+  align-items: center;
+  @include screen(small) {
+    > span {
+      font-weight: 500;
+    }
+  }
+  &__list {
+    @extend %flex-center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  &__card {
+    @extend %flex-center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 180px;
+    border-radius: 8px;
+    // border: 1px solid #2aa7ff;
+    > span {
+      color: #abb6c7;
+    }
+  }
+}
