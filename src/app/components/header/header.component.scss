@@ -2,20 +2,20 @@
 
 .header {
   position: sticky;
-  top: 0;
+  top: 1rem;
   z-index: 1000;
-  max-width: 1272px;
-  margin: 3rem auto 0;
-  background-color: var(--primary);
+  max-width: var(--mx-width);
+  margin: 0 auto;
+  padding: 1rem;
 
   &__logo {
-    max-width: 195px;
+    max-width: 184px;
   }
 
   &__navbar {
     flex: 1 1 auto;
 
-    @include screen(custom, max, 768) {
+    @include screen(custom, max, 860) {
       display: none;
     }
 
@@ -23,50 +23,13 @@
       flex: 1 1 auto;
       flex-direction: row;
       justify-content: space-evenly;
-
-      @include screen(custom, min, 1200) {
-        padding: 0 10rem;
-      }
     }
 
     .nav-item {
       a {
+        color: #000;
         font-size: 0.8rem;
       }
-    }
-  }
-
-  &__dripdown {
-    > a {
-      font-size: 1.5rem;
-      padding: 1rem;
-    }
-  }
-
-  &__btnget {
-    border-radius: 50px;
-    padding: 0.6rem 1rem;
-
-    &:hover {
-      background-color: transparent;
-      color: #fff;
-      box-shadow: 0 0 5px #fff;
-    }
-  }
-
-  &__menu {
-    padding: 0;
-    width: 33px;
-    border-style: none;
-
-    &::after {
-      display: none;
-    }
-  }
-
-  .dropdown {
-    @include screen(small) {
-      display: none;
     }
   }
 }

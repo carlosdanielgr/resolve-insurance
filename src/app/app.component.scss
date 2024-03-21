@@ -1,3 +1,18 @@
+@use "./../styles/mixins" as *;
+
+.line-top {
+  padding: 0.7rem 1rem;
+  text-align: center;
+  @include screen(med-small) {
+    text-align: end;
+  }
+  > span {
+    margin: 0 auto;
+    max-width: calc(var(--mx-width) - 2rem);
+    display: block;
+  }
+}
+
 .main {
   display: flex;
   flex-direction: column;
