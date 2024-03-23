@@ -1,0 +1,22 @@
+.fourth-content {
+  text-align: center;
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
+    gap: 1.5rem;
+    > div {
+      padding: 1rem 2rem;
+      gap: 1.5rem;
+      justify-content: space-evenly;
+    }
+    span {
+      color: #abb6c7;
+    }
+  }
+  &__image {
+    text-align: center;
+    > img {
+      max-width: 3.8rem;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+<article class="fourth-content">
+  <p class="subtitle mb-5">Encuentra tu seguro</p>
+  <section class="fourth-content__cards">
+    @for (item of data; track $index) {
+    <div class="card">
+      <figure class="fourth-content__image">
+        <img [src]="item.icon" alt="icon" />
+      </figure>
+      <span> {{ item.text }} </span>
+    </div>
+    }
+  </section>
+  <div class="text-center my-5">
+    <button type="button" class="btn btn-primary">Cotiza aquí</button>
+  </div>
+</article>

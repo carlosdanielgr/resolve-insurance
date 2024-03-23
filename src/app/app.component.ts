@@ -4,6 +4,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FirstContentComponent } from './components/first-content/first-content.component';
 import { SecondContentComponent } from './components/second-content/second-content.component';
 import { ThirdContentComponent } from './components/third-content/third-content.component';
+import { FourthContentComponent } from './components/fourth-content/fourth-content.component';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,7 @@ import { ThirdContentComponent } from './components/third-content/third-content.
     FirstContentComponent,
     SecondContentComponent,
     ThirdContentComponent,
+    FourthContentComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
