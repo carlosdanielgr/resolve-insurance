@@ -1,13 +1,15 @@
-<article class="second-content card">
-  <span class="txt-second">Puede que estés buscando</span>
-  <section class="second-content__list">
-    @for (item of data; track $index) {
-    <div class="second-content__card">
-      <figure>
-        <img [src]="item.icon" alt="icon" />
-      </figure>
-      <span>{{ item.text }}</span>
-    </div>
-    }
-  </section>
+<article>
+  <div class="second-content card">
+    <span class="txt-second">Puede que estés buscando</span>
+    <section class="second-content__list">
+      @for (item of data; track $index) {
+      <div class="second-content__card">
+        <figure>
+          <img [src]="item.icon" alt="icon" />
+        </figure>
+        <span>{{ item.text }}</span>
+      </div>
+      }
+    </section>
+  </div>
 </article>

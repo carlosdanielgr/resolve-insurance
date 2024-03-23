@@ -1,0 +1,21 @@
+<div class="bg-white">
+  <article class="third-content">
+    <div class="text-center">
+      <span>Nosotros</span>
+      <p class="subtitle">Cómo Trabajamos</p>
+    </div>
+    <div class="third-content__cards">
+      @for (item of data; track $index) {
+      <div class="card">
+        <figure class="third-content__image">
+          <img [src]="item.img" alt="image" />
+        </figure>
+        <div class="card-body">
+          <span>{{ item.desc }}</span>
+          <p>{{ item.text }}</p>
+        </div>
+      </div>
+      }
+    </div>
+  </article>
+</div>

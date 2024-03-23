@@ -1,0 +1,37 @@
+@use "./../../../styles/mixins" as *;
+
+.third-content {
+  margin-top: -5rem;
+  padding-top: 5rem;
+  &__cards {
+    display: flex;
+    gap: 3rem;
+    @include screen(custom, max, 992) {
+      flex-wrap: wrap;
+      justify-content: center;
+      .card {
+        max-width: 24rem;
+      }
+    }
+  }
+  .card {
+    span {
+      color: #77829d;
+    }
+    p {
+      font-size: 1.15rem;
+      color: var(--secondary);
+    }
+    @include screen(med-small) {
+      flex: 1;
+    }
+  }
+  &__image {
+    height: 16.8rem;
+    background-color: var(--bg-primary);
+    text-align: center;
+    > img {
+      max-width: 16.8rem;
+    }
+  }
+}

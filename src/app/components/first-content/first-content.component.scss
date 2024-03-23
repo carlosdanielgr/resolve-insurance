@@ -17,6 +17,7 @@
     justify-content: space-between;
     height: 360px;
     margin-bottom: 2.5rem;
+    padding: 0 1rem;
     @include screen(small) {
       height: 400px;
       flex-direction: row-reverse;

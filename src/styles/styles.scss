@@ -10,6 +10,7 @@
 
 :root {
   --primary: #2aa7ff;
+  --secondary: #1b3c74;
   --bg-primary: #f4f8ff;
   --white: #fff;
   --mx-width: 1170px;
@@ -68,7 +69,7 @@ article {
 }
 
 .txt-second {
-  color: #102851;
+  color: var(--secondary);
 }
 
 .sixth-content-carousel {
@@ -98,32 +99,32 @@ article {
 }
 
 .subtitle {
-  font-size: 1.5rem;
-  font-weight: 700;
-
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--secondary);
   @include screen(small) {
-    font-size: 2.2rem;
+    font-size: 3rem;
   }
 }
 
-.form-dropdown {
-  width: 70%;
+// OVERRIDE BOOTSTRAP
 
-  @include screen(custom, min, 1272) {
-    width: 560px;
-  }
+// .form-dropdown {
+//   width: 70%;
 
-  @include screenLimit(700px, 1271px) {
-    width: calc(58vw - 180px);
-  }
-}
+//   @include screen(custom, min, 1272) {
+//     width: 560px;
+//   }
+
+//   @include screenLimit(700px, 1271px) {
+//     width: calc(58vw - 180px);
+//   }
+// }
 
 input.ng-touched.ng-invalid,
 .error {
   border: 1.5px solid red !important;
 }
-
-// OVERRIDE BOOTSTRAP
 
 %btn-primary {
   border: 0;
@@ -170,8 +171,9 @@ input.ng-touched.ng-invalid,
 }
 
 .card {
+  border: 0;
   border-radius: 15px;
-  box-shadow: 0 0 5px #00000052;
+  box-shadow: 0 0 12px rgb(0 0 0 / 10%);
 }
 
 // .dropdown-menu {
