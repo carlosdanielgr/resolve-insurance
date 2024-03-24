@@ -1,0 +1,61 @@
+@use "./../../../styles/mixins" as *;
+
+.footer {
+  padding: 2rem;
+  background-color: var(--secondary);
+  span {
+    color: #fff;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3rem;
+    @include screen(custom, max, 992) {
+      flex-direction: column;
+    }
+  }
+  &__first {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    @include screen(custom, max, 992) {
+      text-align: center;
+      align-items: center;
+    }
+    > figure {
+      max-width: 11.5rem;
+    }
+  }
+  &__second {
+    text-align: center;
+    max-width: 17rem;
+    > span {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+  }
+  &__third {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    img {
+      width: 35px;
+    }
+  }
+  &__fourth {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    flex-direction: column;
+    > a {
+      text-decoration: underline;
+    }
+    @include screen(small) {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}

@@ -8,6 +8,7 @@ import { FourthContentComponent } from './components/fourth-content/fourth-conte
 import { FifthContentComponent } from './components/fifth-content/fifth-content.component';
 import { SixthContentComponent } from './components/sixth-content/sixth-content.component';
 import { SeventhContentComponent } from './components/seventh-content/seventh-content.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -21,6 +22,7 @@ import { SeventhContentComponent } from './components/seventh-content/seventh-co
     FifthContentComponent,
     SixthContentComponent,
     SeventhContentComponent,
+    FooterComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
