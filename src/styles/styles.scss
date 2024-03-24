@@ -169,6 +169,19 @@ input.ng-touched.ng-invalid,
     }
   }
 }
+.carousel-control-prev,
+.carousel-control-next {
+  width: 2rem;
+}
+
+.carousel-control-prev-icon {
+  background-image: url(./../assets/icons/arrow.svg);
+}
+
+.carousel-control-next-icon {
+  transform: rotate(180deg);
+  background-image: url(./../assets/icons/arrow.svg);
+}
 
 .card {
   border: 0;

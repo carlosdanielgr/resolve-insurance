@@ -1,0 +1,12 @@
+.fifth-content {
+  &__images {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &__image {
+    width: 6.2rem;
+  }
+}

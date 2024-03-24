@@ -1,0 +1,18 @@
+<div class="bg-white">
+  <article class="fifth-content">
+    <p class="subtitle my-5 text-center">Socios comerciales</p>
+    <ngb-carousel [showNavigationIndicators]="false">
+      @for (item_images of images; track $index) {
+      <ng-template ngbSlide>
+        <div class="fifth-content__images">
+          @for (item of item_images; track $index) {
+          <figure class="fifth-content__image">
+            <img [src]="item" alt="image" />
+          </figure>
+          }
+        </div>
+      </ng-template>
+      }
+    </ngb-carousel>
+  </article>
+</div>
