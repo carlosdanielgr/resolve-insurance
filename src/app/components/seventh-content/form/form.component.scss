@@ -1,0 +1,43 @@
+@use "./../../../../styles/mixins" as *;
+
+.form {
+  padding: 1rem;
+  background-color: var(--primary);
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 1rem;
+    > div {
+      flex: 1;
+      min-width: 20rem;
+    }
+    > div:nth-child(7),
+    > div:last-child {
+      min-width: 100%;
+    }
+  }
+}
+
+.card {
+  top: -10rem;
+}
+
+.form-label {
+  color: var(--secondary);
+}
+.form-control {
+  height: 3.1rem;
+  background-color: #fafbfe;
+  color: var(--secondary);
+  &:focus {
+    box-shadow: none;
+  }
+  &::placeholder {
+    color: #abb6c7;
+  }
+}
+
+.btn-primary {
+  background: none;
+  background-color: var(--primary);
+}

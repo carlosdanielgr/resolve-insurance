@@ -7,6 +7,7 @@ import { ThirdContentComponent } from './components/third-content/third-content.
 import { FourthContentComponent } from './components/fourth-content/fourth-content.component';
 import { FifthContentComponent } from './components/fifth-content/fifth-content.component';
 import { SixthContentComponent } from './components/sixth-content/sixth-content.component';
+import { SeventhContentComponent } from './components/seventh-content/seventh-content.component';
 
 @Component({
   selector: 'app-root',
@@ -19,6 +20,7 @@ import { SixthContentComponent } from './components/sixth-content/sixth-content.
     FourthContentComponent,
     FifthContentComponent,
     SixthContentComponent,
+    SeventhContentComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
