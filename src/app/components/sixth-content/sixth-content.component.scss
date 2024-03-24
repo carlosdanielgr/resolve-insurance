@@ -1,0 +1,25 @@
+.sixth-content {
+  &__cards {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  .card {
+    flex: 1;
+    padding: 2rem 0.5rem;
+    min-width: 12rem;
+    max-width: 14rem;
+    > span {
+      color: #77829d;
+    }
+  }
+  &__image {
+    background-color: var(--bg-primary);
+    border-radius: 50%;
+    max-width: 11.8rem;
+    margin: 0 auto;
+  }
+}

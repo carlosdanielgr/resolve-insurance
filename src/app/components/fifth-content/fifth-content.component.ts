@@ -7,7 +7,6 @@ const ORIGINAL_IMAGES = [
   `${URL_IMAGE}Ana Seguros.png`,
   `${URL_IMAGE}Assist Card_color.png`,
   `${URL_IMAGE}Axa Seguros.png`,
-  `${URL_IMAGE}BX+.png`,
   `${URL_IMAGE}Logo Qualitas_718x718.png`,
   `${URL_IMAGE}zurich_600x300.png`,
   `${URL_IMAGE}Logo-Ve-Por-Mas-Seguros_1312x843.jpg`,
@@ -26,7 +25,7 @@ export class FifthContentComponent {
   images: Array<string[]> = [];
 
   constructor() {
-    if (window.innerWidth > 992) this.splitArray(5);
+    if (window.innerWidth > 992) this.splitArray(4);
     else if (window.innerWidth > 450) this.splitArray(2);
     else this.splitArray(1);
   }

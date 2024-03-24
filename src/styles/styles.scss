@@ -191,10 +191,14 @@ input.ng-touched.ng-invalid,
 
 .nav-tabs {
   border-bottom: 1px solid var(--primary);
+  overflow-y: hidden;
+  overflow-x: auto;
+  flex-wrap: nowrap;
 }
 
 .nav-tabs .nav-item {
   flex: 1;
+  min-width: 10rem;
 }
 
 .nav-tabs .nav-link {
