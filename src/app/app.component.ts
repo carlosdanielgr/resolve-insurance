@@ -6,6 +6,7 @@ import { SecondContentComponent } from './components/second-content/second-conte
 import { ThirdContentComponent } from './components/third-content/third-content.component';
 import { FourthContentComponent } from './components/fourth-content/fourth-content.component';
 import { FifthContentComponent } from './components/fifth-content/fifth-content.component';
+import { SixthContentComponent } from './components/sixth-content/sixth-content.component';
 
 @Component({
   selector: 'app-root',
@@ -17,6 +18,7 @@ import { FifthContentComponent } from './components/fifth-content/fifth-content.
     ThirdContentComponent,
     FourthContentComponent,
     FifthContentComponent,
+    SixthContentComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

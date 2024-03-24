@@ -159,10 +159,10 @@ input.ng-touched.ng-invalid,
       &::after {
         content: "";
         position: absolute;
-        width: 20px;
-        height: 20px;
-        top: -5px;
-        left: -5px;
+        width: 25px;
+        height: 25px;
+        top: -7px;
+        left: -7px;
         border-radius: 50%;
         border: 1px solid #2aa7ff;
       }
@@ -187,6 +187,30 @@ input.ng-touched.ng-invalid,
   border: 0;
   border-radius: 15px;
   box-shadow: 0 0 12px rgb(0 0 0 / 10%);
+}
+
+.nav-tabs {
+  border-bottom: 1px solid var(--primary);
+}
+
+.nav-tabs .nav-item {
+  flex: 1;
+}
+
+.nav-tabs .nav-link {
+  color: var(--secondary);
+  border: 0;
+  width: 100%;
+  &:hover {
+    border-color: transparent;
+  }
+}
+
+.nav-tabs .nav-link.active {
+  color: var(--primary);
+  background-color: transparent;
+  border: 0;
+  border-bottom: 5px solid var(--primary);
 }
 
 // .dropdown-menu {
