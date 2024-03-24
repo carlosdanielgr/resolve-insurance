@@ -1,6 +1,7 @@
 import { NgTemplateOutlet } from '@angular/common';
 import { Component } from '@angular/core';
 import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
+import { GlobalService } from '../../services/global.service';
 
 @Component({
   selector: 'app-sixth-content',
@@ -10,8 +11,6 @@ import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
   styleUrl: './sixth-content.component.scss',
 })
 export class SixthContentComponent {
-  active = 1;
-
   URL_IMG = './assets/images/products/';
 
   continue = [
@@ -108,4 +107,6 @@ export class SixthContentComponent {
       text: 'Psicólogos',
     },
   ];
+
+  constructor(readonly globalService: GlobalService) {}
 }

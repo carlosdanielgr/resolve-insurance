@@ -3,7 +3,12 @@
     <span class="txt-second">Puede que estés buscando</span>
     <section class="second-content__list">
       @for (item of data; track $index) {
-      <div class="second-content__card">
+      <div
+        role="button"
+        class="second-content__card"
+        [class.second-content__card--active]="activeIndex === $index"
+        (click)="onActiveCard($index)"
+      >
         <figure>
           <img [src]="item.icon" alt="icon" />
         </figure>

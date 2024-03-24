@@ -28,9 +28,13 @@
     width: 200px;
     height: 180px;
     border-radius: 8px;
-    // border: 1px solid #2aa7ff;
+    background-color: #fafbfe;
     > span {
       color: #abb6c7;
+    }
+    &--active {
+      border: 1px solid var(--primary);
+      background-color: #2aa7ff14;
     }
   }
 }

@@ -42,4 +42,11 @@ export class FourthContentComponent {
       text: 'Motos y bicicletas',
     },
   ];
+
+  activeIndex = -1;
+
+  onActiveCard(index: number) {
+    this.activeIndex = index;
+    location.href = '#form';
+  }
 }

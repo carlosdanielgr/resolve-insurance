@@ -30,4 +30,11 @@ export class SecondContentComponent {
       icon: './assets/icons/protect.svg',
     },
   ];
+
+  activeIndex = -1;
+
+  onActiveCard(index: number) {
+    this.activeIndex = index;
+    location.href = '#form';
+  }
 }

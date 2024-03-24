@@ -1,6 +1,11 @@
-<article class="sixth-content">
+<article id="products" class="sixth-content">
   <p class="subtitle my-5 text-center">Productos para tu vida</p>
-  <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+  <ul
+    ngbNav
+    #nav="ngbNav"
+    [(activeId)]="globalService.activeProduct"
+    class="nav-tabs"
+  >
     <li [ngbNavItem]="1">
       <button ngbNavLink>Prosigue</button>
       <ng-template ngbNavContent>

@@ -17,16 +17,18 @@
           <a href="#form">Determina</a>
         </li>
         <li class="nav-item">
-          <a href="#form">Vive</a>
+          <a href="#products" (click)="globalService.activeProduct = 4">Vive</a>
         </li>
         <li class="nav-item">
           <a href="#form">Destácate</a>
         </li>
         <li class="nav-item">
-          <a href="#form">Se Responsable</a>
+          <a href="#products" (click)="globalService.activeProduct = 5"
+            >Se Responsable</a
+          >
         </li>
       </ul>
     </nav>
-    <button type="button" class="btn btn-primary">Asegúrate</button>
+    <a href="#form" class="btn btn-primary">Asegúrate</a>
   </div>
 </header>

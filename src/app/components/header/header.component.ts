@@ -2,6 +2,7 @@ import { Location } from '@angular/common';
 import { Component } from '@angular/core';
 
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { GlobalService } from '../../services/global.service';
 
 @Component({
   selector: 'app-header',
@@ -11,7 +12,10 @@ import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-  constructor(private readonly location: Location) {}
+  constructor(
+    private readonly location: Location,
+    readonly globalService: GlobalService
+  ) {}
 
   onInit() {
     window.scroll({

@@ -20,3 +20,11 @@
     }
   }
 }
+
+.card {
+  height: 11.25rem;
+  &--active {
+    border: 1px solid var(--primary);
+    background-color: #2aa7ff14;
+  }
+}
