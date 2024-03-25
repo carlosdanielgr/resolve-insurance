@@ -10,16 +10,16 @@ import { Component } from '@angular/core';
 export class SecondContentComponent {
   data = [
     {
-      text: 'Seguros de auto',
-      icon: './assets/icons/car-solid.svg',
-    },
-    {
       text: 'Gastos Médicos',
       icon: './assets/icons/house+.svg',
     },
     {
       text: 'Vida tradicional',
       icon: './assets/icons/people.svg',
+    },
+    {
+      text: 'Seguros de auto',
+      icon: './assets/icons/car-solid.svg',
     },
     {
       text: 'Hogar',
