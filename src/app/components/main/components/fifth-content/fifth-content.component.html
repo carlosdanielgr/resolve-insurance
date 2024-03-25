@@ -6,8 +6,11 @@
       <ng-template ngbSlide>
         <div class="fifth-content__images">
           @for (item of item_images; track $index) {
-          <figure class="fifth-content__image">
-            <img [src]="item" alt="image" />
+          <figure
+            class="fifth-content__image"
+            [class.fifth-content__image--small]="item.isSmall"
+          >
+            <img [src]="item.url" alt="image" />
           </figure>
           }
         </div>

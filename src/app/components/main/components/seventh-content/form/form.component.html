@@ -1,6 +1,6 @@
 <div class="form">
   <article class="card">
-    <form class="form__content">
+    <form class="form__content" [formGroup]="form">
       <div>
         <label for="name" class="form-label">Nombre</label>
         <input
@@ -8,6 +8,7 @@
           class="form-control"
           id="name"
           placeholder="Nombre"
+          formControlName="name"
         />
       </div>
       <div>
@@ -17,6 +18,7 @@
           class="form-control"
           id="email"
           placeholder="Correo electrónico"
+          formControlName="email"
         />
       </div>
       <div>
@@ -26,6 +28,7 @@
           class="form-control"
           id="phone"
           placeholder="Número de celular"
+          formControlName="phone"
         />
       </div>
       <div>
@@ -35,6 +38,7 @@
           class="form-control"
           id="dateBirth"
           placeholder="Fecha de nacimiento"
+          formControlName="dateBirth"
         />
       </div>
       <div>
@@ -44,6 +48,7 @@
           class="form-control"
           id="state"
           placeholder="Estado"
+          formControlName="state"
         />
       </div>
       <div>
@@ -53,18 +58,50 @@
           class="form-control"
           id="municipality"
           placeholder="Municipio"
+          formControlName="municipality"
         />
       </div>
-      <div>
-        <label for="protect" class="form-label"
-          >¿Qué es lo que quieres proteger?</label
+      <div ngbDropdown>
+        <button
+          type="button"
+          class="btn form__dropdown"
+          id="question"
+          ngbDropdownToggle
         >
-        <input
-          type="text"
-          class="form-control"
-          id="protect"
-          placeholder="¿Qué es lo que quieres proteger?"
-        />
+          {{
+            form.controls["protect"].value || "¿Qué es lo que quieres proteger?"
+          }}
+        </button>
+        <div ngbDropdownMenu aria-labelledby="question">
+          <button
+            type="button"
+            ngbDropdownItem
+            (click)="onSelectProtect('Seguro de gastos médicos')"
+          >
+            Seguro de gastos médicos
+          </button>
+          <button
+            type="button"
+            ngbDropdownItem
+            (click)="onSelectProtect('Seguro de vida')"
+          >
+            Seguro de vida
+          </button>
+          <button
+            type="button"
+            ngbDropdownItem
+            (click)="onSelectProtect('Plan de ahorro / inversión')"
+          >
+            Plan de ahorro / inversión
+          </button>
+          <button
+            type="button"
+            ngbDropdownItem
+            (click)="onSelectProtect('Necesito otro tipo de seguro')"
+          >
+            Necesito otro tipo de seguro
+          </button>
+        </div>
       </div>
       <div class="text-center my-4">
         <button type="button" class="btn btn-primary">Enviar</button>

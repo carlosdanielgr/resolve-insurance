@@ -1,17 +1,42 @@
 import { Component } from '@angular/core';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
+interface Image {
+  url: string;
+  isSmall?: boolean;
+}
+
 const URL_IMAGE = './assets/images/companies/';
 
-const ORIGINAL_IMAGES = [
-  `${URL_IMAGE}Ana Seguros.png`,
-  `${URL_IMAGE}Assist Card_color.png`,
-  `${URL_IMAGE}Axa Seguros.png`,
-  `${URL_IMAGE}Logo Qualitas_718x718.png`,
-  `${URL_IMAGE}zurich_600x300.png`,
-  `${URL_IMAGE}Logo-Ve-Por-Mas-Seguros_1312x843.jpg`,
-  `${URL_IMAGE}S Atlas_.jpg`,
-  `${URL_IMAGE}Seguros-GMX.jpg`,
+const ORIGINAL_IMAGES: Image[] = [
+  {
+    url: `${URL_IMAGE}Ana Seguros.png`,
+  },
+  {
+    url: `${URL_IMAGE}Assist Card_color.png`,
+  },
+  {
+    url: `${URL_IMAGE}Axa Seguros.png`,
+  },
+  {
+    url: `${URL_IMAGE}Logo Qualitas_718x718.png`,
+  },
+  {
+    url: `${URL_IMAGE}zurich_600x300.png`,
+    isSmall: true,
+  },
+  {
+    url: `${URL_IMAGE}Logo-Ve-Por-Mas-Seguros_1312x843.jpg`,
+    isSmall: true,
+  },
+  {
+    url: `${URL_IMAGE}S Atlas_.jpg`,
+    isSmall: true,
+  },
+  {
+    url: `${URL_IMAGE}Seguros-GMX.jpg`,
+    isSmall: true,
+  },
 ];
 
 @Component({
@@ -22,7 +47,7 @@ const ORIGINAL_IMAGES = [
   styleUrl: './fifth-content.component.scss',
 })
 export class FifthContentComponent {
-  images: Array<string[]> = [];
+  images: Array<Image[]> = [];
 
   constructor() {
     if (window.innerWidth > 992) this.splitArray(4);

@@ -1,5 +1,20 @@
 @use "./../../../../../../styles/mixins" as *;
 
+%control {
+  height: 3.1rem;
+  background-color: #fafbfe;
+  color: var(--secondary);
+  &:active {
+    border-color: var(--primary);
+  }
+  &:focus {
+    box-shadow: none;
+  }
+  &::placeholder {
+    color: #abb6c7;
+  }
+}
+
 .form {
   padding: 1rem;
   background-color: var(--primary);
@@ -16,6 +31,14 @@
       min-width: 100%;
     }
   }
+  &__dropdown {
+    @extend %control;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+  }
 }
 
 .card {
@@ -26,15 +49,7 @@
   color: var(--secondary);
 }
 .form-control {
-  height: 3.1rem;
-  background-color: #fafbfe;
-  color: var(--secondary);
-  &:focus {
-    box-shadow: none;
-  }
-  &::placeholder {
-    color: #abb6c7;
-  }
+  @extend %control;
 }
 
 .btn-primary {

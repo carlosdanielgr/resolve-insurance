@@ -109,18 +109,6 @@ article {
 
 // OVERRIDE BOOTSTRAP
 
-// .form-dropdown {
-//   width: 70%;
-
-//   @include screen(custom, min, 1272) {
-//     width: 560px;
-//   }
-
-//   @include screenLimit(700px, 1271px) {
-//     width: calc(58vw - 180px);
-//   }
-// }
-
 input.ng-touched.ng-invalid,
 .error {
   border: 1.5px solid red !important;
@@ -217,38 +205,18 @@ input.ng-touched.ng-invalid,
   border-bottom: 5px solid var(--primary);
 }
 
-// .dropdown-menu {
-//   border-radius: 20px;
-//   background-color: var(--primary);
-//   width: 100%;
+.dropdown-menu {
+  border-radius: 10px;
+  box-shadow: 0 0px 10px rgb(0 0 0 / 34%);
+  width: 100%;
 
-//   > a,
-//   button {
-//     color: #fff;
+  button {
+    color: var(--secondary);
 
-//     &:hover,
-//     &:focus {
-//       background-color: transparent;
-//       color: #fff;
-//     }
-//   }
-// }
-
-// .form-control,
-// .form-select {
-//   border-radius: 50px;
-//   padding: 1rem;
-//   background-color: transparent;
-//   color: #fff;
-
-//   &:focus {
-//     background-color: transparent;
-//     border-color: #fff;
-//     color: #fff;
-//     box-shadow: none;
-//   }
-
-//   &::placeholder {
-//     color: #fff;
-//   }
-// }
+    &:hover,
+    &:focus {
+      background-color: var(--primary);
+      color: var(--white);
+    }
+  }
+}
