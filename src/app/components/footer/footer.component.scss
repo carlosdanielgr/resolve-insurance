@@ -40,8 +40,14 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
+    > a {
+      background-color: #fff;
+      border-radius: 50%;
+      padding: 0.3rem;
+    }
     img {
-      width: 35px;
+      width: 2.1rem;
+      height: 2.1rem;
     }
   }
   &__fourth {
