@@ -1,7 +1,7 @@
 import { NgTemplateOutlet } from '@angular/common';
 import { Component } from '@angular/core';
 import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
-import { GlobalService } from '../../services/global.service';
+import { GlobalService } from '../../../../services/global.service';
 
 @Component({
   selector: 'app-sixth-content',

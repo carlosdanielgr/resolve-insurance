@@ -2,33 +2,25 @@
   <div
     class="header__content d-flex align-items-center gap-4 justify-content-between"
   >
-    <figure role="button" class="header__logo" (click)="onInit()">
+    <figure role="button" class="header__logo" routerLink="" (click)="onInit()">
       <img src="./assets/images/logo.webp" alt="Logo" />
     </figure>
     <nav class="header__navbar navbar gap-4">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a href="#products" (click)="globalService.activeProduct = 1"
-            >Prosigue</a
-          >
+          <a routerLink="" (click)="onItemLink(1)">Prosigue</a>
         </li>
         <li class="nav-item">
-          <a href="#products" (click)="globalService.activeProduct = 2"
-            >Cuida tu salud</a
-          >
+          <a routerLink="" (click)="onItemLink(2)">Cuida tu salud</a>
         </li>
         <li class="nav-item">
-          <a href="#products" (click)="globalService.activeProduct = 3"
-            >Elige</a
-          >
+          <a routerLink="" (click)="onItemLink(3)">Elige</a>
         </li>
         <li class="nav-item">
-          <a href="#products" (click)="globalService.activeProduct = 4">Vive</a>
+          <a routerLink="" (click)="onItemLink(4)">Vive</a>
         </li>
         <li class="nav-item">
-          <a href="#products" (click)="globalService.activeProduct = 5"
-            >Se Responsable</a
-          >
+          <a routerLink="" (click)="onItemLink(5)">Se Responsable</a>
         </li>
       </ul>
     </nav>

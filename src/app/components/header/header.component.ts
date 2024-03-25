@@ -1,4 +1,4 @@
-import { Location } from '@angular/common';
+import { RouterLink } from '@angular/router';
 import { Component } from '@angular/core';
 
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
@@ -7,15 +7,12 @@ import { GlobalService } from '../../services/global.service';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgbDropdownModule],
+  imports: [RouterLink, NgbDropdownModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-  constructor(
-    private readonly location: Location,
-    readonly globalService: GlobalService
-  ) {}
+  constructor(readonly globalService: GlobalService) {}
 
   onInit() {
     window.scroll({
@@ -23,6 +20,10 @@ export class HeaderComponent {
       left: 0,
       behavior: 'smooth',
     });
-    this.location.replaceState('');
+  }
+
+  onItemLink(active: number) {
+    location.href = '#products';
+    this.globalService.setActive(active);
   }
 }

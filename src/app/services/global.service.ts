@@ -4,7 +4,12 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class GlobalService {
-  activeProduct = 1;
+  activeProduct = Number(localStorage.getItem('active')) || 1;
 
   constructor() {}
+
+  setActive(number: number) {
+    localStorage.setItem('active', String(number));
+    this.activeProduct = number;
+  }
 }
