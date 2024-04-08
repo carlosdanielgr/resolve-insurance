@@ -19,7 +19,7 @@ export class SixthContentComponent {
       text: 'Seguros de auto',
     },
     {
-      image: `${this.URL_IMG}cont-pick.webp`,
+      image: `${this.URL_IMG}cont-pick.png`,
       text: 'Pick ups',
     },
     {

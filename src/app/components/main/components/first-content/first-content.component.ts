@@ -15,8 +15,8 @@ export class FirstContentComponent {
       image: './assets/images/sports.webp',
       text: 'Soluciones a tu medida y a tu alcance',
       title: {
-        first: 'Deportes',
-        second: 'individuales y en grupo',
+        first: 'Accidentes',
+        second: 'deportivos',
       },
       url: '',
     },
@@ -24,8 +24,8 @@ export class FirstContentComponent {
       image: './assets/images/subscribe.webp',
       text: 'Soluciones a tu medida y a tu alcance',
       title: {
-        first: 'Invierte',
-        second: 'para tu retiro o por si llegas a faltar',
+        first: 'Planifica',
+        second: 'tu retiro',
       },
       url: '',
     },
@@ -42,8 +42,8 @@ export class FirstContentComponent {
       image: './assets/images/families.webp',
       text: 'Soluciones a tu medida y a tu alcance',
       title: {
-        first: 'Enfermedades',
-        second: 'y accidentes de vida',
+        first: 'Gastos médicos mayores,',
+        second: 'más que un seguro, es tu paz mental',
       },
       url: '',
     },
